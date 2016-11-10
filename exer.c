@@ -56,29 +56,27 @@ int main(void)
 
 	}
 
-printf("# - Alunos Reprovados por nota - # \n ");
-    for (i=0; i < 10; i++)
-    {
-        if(nota[i] < 60){
-        printf("Aluno, %s nota, %d \n", nome[i], nota[i]);
+    printf("# - Alunos Reprovados por nota - # \n ");
+        for (i=0; i < 10; i++){
+            if(nota[i] < 60){
+            printf("Aluno, %s nota, %d \n", nome[i], nota[i]);
+            }
         }
-    }
 
- printf("# - Alunos Reprovados por falta - # \n");
-    for(i=0; i < 10; i++){
-        if(faltas[i] >= (hdisciplina[i] * .25)){
+    printf("# - Alunos Reprovados por falta - # \n");
+        for(i=0; i < 10; i++){
+            if(faltas[i] >= (hdisciplina[i] * .25)){
             printf("Aluno: %s Faltas: %d \n", nome[i], faltas[i]);
+            }
         }
-    }
 
-printf("# - Aluno com a maior nota - # \n");
+    printf("# - Aluno com a maior nota - # \n");
         printf("Aluno: %s Nota: %d \n", nome[0], nota[0]);
 
-printf("# - Dez alunos com melhores notas - # \n");
-    for(i=0; i < 10; i++){
-        printf("Aluno: %s Nota: %d \n", nome[i], nota[i]);
-    }
+    printf("# - Dez alunos com melhores notas - # \n");
+        for(i=0; i < 10; i++){
+            printf("Aluno: %s Nota: %d \n", nome[i], nota[i]);
+        }
 
     return 0;
-
 }
